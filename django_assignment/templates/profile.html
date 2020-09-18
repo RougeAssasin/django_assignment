@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %} 
+
+{% block content %}
+	<div class="card" style="width:500px">
+	  <img class="card-img-top" src="{{ profile.image.url }}" alt="Card image">
+	  <div>
+	    <h4 class="card-title">Name: {{ profile.first_name }}  {{ Profile.last_name}}</h4>
+	    <p class="card-text">Age: {{ profile.age }} 
+	    					Unique Id:{{ profile.unique_id }} 
+	    					Email: {{ profile.email }}</p>
+	  </div>
+	</div>
+{% endblock %}
